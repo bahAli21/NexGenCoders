@@ -1,0 +1,25 @@
+@import "home.css"; /*Importe le style de la page d'accueil*/
+@import "login.css"; /*Importe le style de la page Login*/
+
+:root{
+    --text-color: #fff;
+    --bg-color: #fff;
+    --main-color: rgb(0, 100, 0);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /*background-image: url("../img/bg-home.png");*/
+    background-size: cover;
+    background-position: center;
+    background-color: #dde1e7;;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    width: 100%;
+}
+
+

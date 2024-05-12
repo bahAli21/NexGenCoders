@@ -1,0 +1,98 @@
+
+.login, .register{
+    padding-top: 0;
+    height: 85vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: #dde1e7;
+
+}
+
+.login img, .register img{
+    margin: 0 10px 0px 0px;
+    background-color: #dde1e7;
+    border-radius: 15px;
+    box-shadow: -7px -7px 7px #ffffff73,
+    5px 5px 5px #5e687949;
+    width: 350px;
+    height: 400px;
+}
+
+.login form, .register form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    background-color: #dde1e7;
+    border-radius: 15px;
+    box-shadow: -7px -7px 7px #ffffff73,
+                5px 5px 5px #5e687949;
+}
+
+.title{
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 22px;
+    color: #808080;
+}
+
+input[type=text], input[type=password]{
+    width: 280px;
+    height: 45px;
+    margin-bottom: 15px;
+    padding-left: 12px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: #3498db;
+    background-color: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73,
+                5px 5px 5px #5e687949;
+}
+
+input[type=checkbox]{
+    cursor: pointer;
+}
+
+.remember-forgot{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.remember{
+    margin-right: 50px;
+    color: #808080;
+}
+
+.forgot a{
+    text-decoration: none;
+    color: #808080;
+}
+
+.forgot a:hover{
+    text-decoration: underline;
+    color: #000000;
+}
+
+.btn{
+    width: 280px;
+    height: 45px;
+    border: none;
+    background-color: #3498db;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: .3s linear;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 2px solid #3498db;
+    background-color: #dde1e7;
+}
