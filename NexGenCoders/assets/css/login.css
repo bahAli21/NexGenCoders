@@ -1,6 +1,6 @@
 
-.login, .register{
-    padding-top: 0;
+.login, .register, .reset-password{
+    margin-top: 7%;
     height: 85vh;
     display: none;
     justify-content: center;
@@ -9,7 +9,7 @@
 
 }
 
-.login img, .register img{
+.login img, .register img, .reset-password img{
     margin: 0 10px 0px 0px;
     background-color: #dde1e7;
     border-radius: 15px;
@@ -19,7 +19,7 @@
     height: 400px;
 }
 
-.login form, .register form{
+.login form, .register form, .reset-password form{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -41,7 +41,18 @@
     color: #808080;
 }
 
-input[type=text], input[type=password]{
+.reset-password .title{
+    margin-bottom: 30px;
+}
+
+.reset-password p{
+    color: #808080;
+    font-size: 16px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+input[type=text], input[type=email], input[type=password]{
     width: 280px;
     height: 45px;
     margin-bottom: 15px;
@@ -92,7 +103,72 @@ input[type=checkbox]{
     cursor: pointer;
 }
 
+.reset-password btn {
+    margin-top: 10%;
+
+}
+
 .btn:hover{
     border: 2px solid #3498db;
     background-color: #dde1e7;
+}
+
+@media screen and (max-width: 750px) {
+    .login img, .register img, .reset-password img{
+        width: 300px;
+        height: 400px;
+    }
+
+    .login form, .register form, .reset-password form{
+
+        width: 300px;
+        height: 400px;
+    }
+
+    .login, .register, .reset-password{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 82%;
+        margin-top: 23% ;
+        margin-left: 9% ;
+    }
+
+    .title{
+        height: 70px;
+        line-height: 70px;
+        margin-bottom: 12px;
+        font-size: 18px;
+    }
+
+    input[type=text], input[type=email], input[type=password]{
+        width: 70%;
+        height: 42px;
+        margin-bottom: 20px;
+        padding-left: 12px;
+    }
+
+    .btn{
+        width: 84%;
+    }
+
+    .login img, .register img, .reset-password img{
+        width: 84%;
+        height: 200px;
+        margin-bottom: 15px;
+    }
+
+    .remember{
+        margin-right: 30px;
+
+    }
+
+    .remember-forgot{
+        font-size: .75rem;
+    }
+
+    .reset-password btn {
+        width: 78%;
+
+    }
 }
