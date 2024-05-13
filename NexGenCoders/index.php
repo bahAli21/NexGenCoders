@@ -6,7 +6,10 @@
     <title>NexGen Coders</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <!--=============== REMIXICONS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- [type="module"] indique au compilateur que je travaille avec des modules en JavaScript et non du JS Native -->
     <script type="module" src="assets/js/script.js" defer></script>
 </head>
