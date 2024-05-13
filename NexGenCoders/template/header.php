@@ -1,123 +1,265 @@
-<!-- Bar de navigation -->
-<div class="menu-bar">
-    <ul>
-        <li class="active"><a href="#" > <i class="fa fa-home"></i>Home</a></li>
-        <li><a href="#"><i class="fa fa-user"></i>About Us</a>
-            <div class="sub-menu-1">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Formation</a></li>
-                    <li><a href="#"><i class="fa fa-github"></i>Github</a></li>
-                    <li><a href="#">Youtub</a></li>
-                </ul>
+<!--=============== HEADER ===============-->
+<header class="header">
+    <nav class="nav container">
+        <div class="nav__data">
+            <a href="#" class="nav__logo">
+                <i class="ri-planet-line"></i> NGC
+            </a>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line nav__burger"></i>
+                <i class="ri-close-line nav__close"></i>
             </div>
+        </div>
 
-        </li>
-        <li><a href="#"><i class="fa fa-clone"></i>Services</a>
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+                <li><a href="#" class="nav__link">Home</a></li>
 
-            <div class="sub-menu-1">
-                <ul>
-                    <li><a href="#">Web Site</a></li>
-                    <li class="hover-me"><a href="#">Mobile App</a><i class="fa fa-angle-right"></i>
+                <!--=============== DROPDOWN 1 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Training <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
 
-                        <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#">OS App</a></li>
-                                <li><a href="#">Android App</a></li>
-                                <li><a href="#">Console App</a></li>
+                    <ul class="dropdown__menu">
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-gamepad-line"></i> Game Dev  <i class="ri-add-line dropdown__add"></i>
+                            </div>
+
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class='bx bxl-c-plus-plus'></i> C/C++
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class="ri-cash-line"></i> Unreal Engine 5
+                                    </a>
+                                </li>
                             </ul>
-                        </div>
+                        </li>
 
-                    </li>
-                    <li class="hover-me"><a href="#">Desktop App</a><i class="fa fa-angle-right"></i>
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class='bx bx-globe'></i> Web Dev  <i class="ri-add-line dropdown__add"></i>
+                            </div>
 
-                        <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#">Windows App</a></li>
-                                <li><a href="#">MacOS App</a></li>
-                                <li><a href="#">Unix App</a></li>
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class='bx bxl-php'></i> PHP
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class="ri-database-2-fill"></i> Database
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class='bx bxl-javascript' ></i> JavaScript
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class='bx bxl-html5' ></i> HTML/CSS
+                                    </a>
+                                </li>
                             </ul>
-                        </div>
+                        </li>
 
-                    </li>
-                </ul>
-            </div>
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class='bx bxl-netlify'></i> Dev .NET  <i class="ri-add-line dropdown__add"></i>
+                            </div>
 
-        </li>
-        <li><a href="#"><i class="fa fa-users"></i>Clients</a>
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class="ri-file-list-line"></i> C#
+                                    </a>
+                                </li>
 
-            <div class="sub-menu-1">
-                <ul>
-                    <li><a href="#"><i class="fa fa-edit"></i>Testimony</a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i>Last Contract</a></li>
-                </ul>
-            </div>
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class='bx bxl-audible'></i> .NET MAUI
+                                    </a>
+                                </li>
 
-        </li>
-        <li><a href="#"><i class="fa fa-edit"></i>Training</a>
-
-            <div class="sub-menu-1">
-                <ul>
-                    <li class="hover-me"><a href="#">Game Dev</a><i class="fa fa-angle-right"></i>
-
-                        <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#">Unreal Engine 5</a></li>
-                                <li><a href="#">C/C++</a></li>
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class='bx bxs-bolt'></i>ASP .NET
+                                    </a>
+                                </li>
                             </ul>
-                        </div>
+                        </li>
+                    </ul>
+                </li>
 
-                    </li>
-                    <li class="hover-me"><a href="#">C#.NET Dev</a><i class="fa fa-angle-right"></i>
+                <!--=============== DROPDOWN 1 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
 
-                        <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#">C#</a></li>
-                                <li><a href="#"></a>.NET MAUI</li>
-                                <li><a href="#"></a>WPF</li>
+                    <ul class="dropdown__menu">
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-global-line"></i> Web Site  <i class="ri-add-line dropdown__add"></i>
+                            </div>
+
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class='bx bxs-leaf'></i> API
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class='bx bxs-edit-alt'></i> Auther
+                                    </a>
+                                </li>
                             </ul>
-                        </div>
+                        </li>
 
-                    </li>
-                    <li class="hover-me"><a href="#">Web Dev</a><i class="fa fa-angle-right"></i>
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-mac-fill"></i> Desktop App  <i class="ri-add-line dropdown__add"></i>
+                            </div>
 
-                        <div class="sub-menu-2">
-                            <ul>
-                                <li><a href="#">PHP</a></li>
-                                <li><a href="#">JavaScript</a></li>
-                                <li><a href="#">CSS</a></li>
-                                <li><a href="#">HTML</a></li>
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class="ri-computer-fill"></i> Windows
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class="ri-macbook-line"></i> MacOS
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class="ri-refund-2-line"></i> Cross Plateform
+                                    </a>
+                                </li>
                             </ul>
-                        </div>
+                        </li>
 
-                    </li>
-                </ul>
-            </div>
+                        <!--=============== DROPDOWN SUBMENU ===============-->
+                        <li class="dropdown__subitem">
+                            <div class="dropdown__link">
+                                <i class="ri-smartphone-line"></i> Mobile App  <i class="ri-add-line dropdown__add"></i>
+                            </div>
 
-        </li>
-        <li><a href="#"><i class="fa fa-phone"></i>Contact</a>
+                            <ul class="dropdown__submenu">
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class="ri-smartphone-line"></i> OS
+                                    </a>
+                                </li>
 
-            <div class="sub-menu-1">
-                <ul>
-                    <li><a href="#"><i class="fa fa-portfolio"></i>Portfolio</a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i>Linkedin</a></li>
-                    <li><a href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
-                </ul>
-            </div>
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class="ri-smartphone-line"></i> Android
+                                    </a>
+                                </li>
 
-        </li>
-        <li><a href="#"><i class="fa fa-lock"></i>Private</a>
+                                <li>
+                                    <a href="#" class="dropdown__sublink">
+                                        <i class="ri-refund-2-line"></i> Cross Plateform
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
 
-            <div class="sub-menu-1">
-                <ul>
-                    <li id="signin"><a href="#"><i class="fa fa-user"></i>Sign In</a></li>
-                    <li id="signup"><a href="#"><i class="fa fa-user"></i>Sign Up</a></li>
-                </ul>
-            </div>
+                <!--=============== DROPDOWN 2 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Clients <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
 
-        </li>
-    </ul>
-</div>
-<!-- Fin Bar de navigation -->
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="#" class="dropdown__link">
+                                <i class="ri-bard-line"></i> Testimony
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown__link">
+                                <i class="ri-lock-line"></i> Last Contract
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--=============== DROPDOWN 2 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Contact <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                        <li>
+                            <a href="#" class="dropdown__link">
+                                <i class='bx bxl-linkedin-square' ></i> Linkedin
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown__link">
+                                <i class='bx bxl-facebook-circle' ></i> Facebook
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown__link">
+                                <i class='bx bxl-twitter' ></i> Twitter
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!--=============== DROPDOWN 2 ===============-->
+                <li class="dropdown__item">
+                    <div class="nav__link">
+                        Private <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                    </div>
+
+                    <ul class="dropdown__menu">
+                        <li id="signin">
+                            <a href="#" class="dropdown__link">
+                                <i class="ri-lock-line"></i> Sign In
+                            </a>
+                        </li>
+
+                        <li id="signup">
+                            <a href="#" class="dropdown__link">
+                                <i class="ri-user-line"></i> Sign Up
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
