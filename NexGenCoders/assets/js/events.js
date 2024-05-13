@@ -1,8 +1,8 @@
 // events.js
 
-import { SignIn, SignUp, backToSignin } from './variables.js';
+import { SignIn, SignUp, backToSignin, resetPasswordLink } from './variables.js';
 
-import { BackToSignInClick, SignInClick, SignUpClick } from './functions.js';
+import {BackToSignInClick, ResetPasswordClick, SignInClick, SignUpClick} from './functions.js';
 
 // Gestionnaire d'événement pour le bouton "Retour à la connexion"
 backToSignin.addEventListener('click', (e) => {
@@ -22,4 +22,9 @@ SignUp.addEventListener('click', (e) => {
     SignUpClick();
 });
 
-export { SignIn, SignUp, backToSignin };
+resetPasswordLink.addEventListener('click', (e)=>{
+    e.preventDefault();
+    ResetPasswordClick();
+});
+
+export { SignIn, SignUp, backToSignin, resetPasswordLink };
