@@ -1,5 +1,5 @@
-@import "home.css"; /*Importe le style de la page d'accueil*/
-@import "login.css"; /*Importe le style de la page Login*/
+@import "header.css"; /*Importe le style du Header*/
+@import "login.css"; /*Importe le style du Login*/
 
 :root{
     --text-color: #fff;
@@ -20,6 +20,12 @@ body{
     box-sizing: border-box;
     font-family: sans-serif;
     width: 100%;
+}
+
+@media screen and (max-width: 750px) {
+    body{
+        width: auto;
+    }
 }
 
 
