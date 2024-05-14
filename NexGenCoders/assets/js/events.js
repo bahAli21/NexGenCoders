@@ -1,30 +1,22 @@
-// events.js
+//Les evenement ici
 
-import { SignIn, SignUp, backToSignin, resetPasswordLink } from './variables.js';
+//j'importe la variable qui gere les 4 item du header qui ont un sub-menu
 
-import {BackToSignInClick, ResetPasswordClick, SignInClick, SignUpClick} from './functions.js';
+import {dropdownItems} from "./variables";
 
-// Gestionnaire d'événement pour le bouton "Retour à la connexion"
-backToSignin.addEventListener('click', (e) => {
-    e.preventDefault();
-    BackToSignInClick();
+// Parcour tous les éléments dropdown__item
+dropdownItems.forEach(item => {
+    // Ajoute un écouteur d'événements de clic à chaque élément dropdown__item
+    item.addEventListener('click', function() {
+        // Supprime la classe 'add' de tous les dropdown__menu
+        document.querySelectorAll('.dropdown__menu').forEach(menu => {
+            menu.classList.remove('sub-menu-click-on-mobile');
+        });
+
+        // Ajouter la classe 'add' au dropdown__menu correspondant à cet élément dropdown__item
+        const menu = this.querySelector('.dropdown__menu');
+        menu.classList.add('sub-menu-click-on-mobile');
+    });
 });
 
-// Gestionnaires d'événements pour le bouton "Se connecter"
-SignIn.addEventListener('click', (e) => {
-    e.preventDefault();
-    SignInClick();
-});
-
-// Gestionnaires d'événements pour le bouton "S'inscrire"
-SignUp.addEventListener('click', (e) => {
-    e.preventDefault();
-    SignUpClick();
-});
-
-resetPasswordLink.addEventListener('click', (e)=>{
-    e.preventDefault();
-    ResetPasswordClick();
-});
-
-export { SignIn, SignUp, backToSignin, resetPasswordLink };
+export {dropdownItems};

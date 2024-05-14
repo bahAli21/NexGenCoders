@@ -1,8 +1,6 @@
 
-
 @import "header.css"; /*Importe le style du header*/
-@import "login.css"; /*Importe le style du login*/
-@import "home.css"; /*Importe le style du home*/
+
 :root{
     --text-color: #fff;
     --bg-color: #fff;
@@ -26,7 +24,8 @@ body{
     flex-direction: column;
 }
 
-main{
+/*pour le home.php */
+/*main{
     position: fixed;
     top: 17%;
     width: 100%;
@@ -34,7 +33,7 @@ main{
     justify-content: center;
     text-align: center;
     display: flex;
-}
+}*/
 
 @media screen and (max-width: 750px) {
     body{

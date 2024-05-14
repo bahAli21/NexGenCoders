@@ -1,4 +1,3 @@
-<!--======================= HOME PAGE ======================-->
 
 <div class="home" id="Home">
     <div class="home-container">

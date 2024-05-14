@@ -4,7 +4,6 @@
 /*J'importe le module functions*/
 import {showMenu} from './functions.js';
 
-/*J'importe le module events*/
-import {} from './events.js';
+import {} from './events'
 
-showMenu('nav-toggle','nav-menu'); //Est coder dans le module Functions qui est ensuite exporter par events donc on a acces ici
+showMenu('nav-toggle','nav-menu'); //Est coder dans le module Functions qui est ensuite exporter par Functions donc on a acces ici

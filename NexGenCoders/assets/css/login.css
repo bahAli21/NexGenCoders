@@ -2,7 +2,7 @@
 .login, .register, .reset-password{
     margin-top: 7%;
     height: 85vh;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     background: #dde1e7;

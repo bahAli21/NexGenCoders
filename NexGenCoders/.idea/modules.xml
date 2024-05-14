@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/NexGenCoders.iml" filepath="$PROJECT_DIR$/.idea/NexGenCoders.iml" />
+      <module fileurl="file://D:/project_Base_de donnee/.idea/PhpStorm-Project.iml" filepath="D:/project_Base_de donnee/.idea/PhpStorm-Project.iml" />
+    </modules>
+  </component>
+</project>

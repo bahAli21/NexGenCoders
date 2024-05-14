@@ -3,7 +3,7 @@
     <nav class="nav container">
         <div class="nav__data">
             <a href="#" class="nav__logo">
-                <i class="ri-planet-line"></i> NGC
+                <i class="ri-planet-line"></i> N-G-C
             </a>
 
             <div class="nav__toggle" id="nav-toggle">
@@ -15,183 +15,31 @@
         <!--=============== NAV MENU ===============-->
         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
-                <li><a href="index.php?page=Home" class="nav__link">Home</a></li>
-                <!--=============== DROPDOWN 1 ===============-->
+                <li><a href="index.php?page=home" class="nav__link">Home</a></li>
+
+                <!--=============== DROPDOWN 2 ===============-->
                 <li class="dropdown__item">
                     <div class="nav__link">
-                        Training <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        Service <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                     </div>
 
                     <ul class="dropdown__menu">
-                        <!--=============== DROPDOWN SUBMENU ===============-->
-                        <li class="dropdown__subitem">
-                            <div class="dropdown__link">
-                                <i class="ri-gamepad-line"></i> Game Dev  <i class="ri-add-line dropdown__add"></i>
-                            </div>
-
-                            <ul class="dropdown__submenu">
-                                <li>
-                                    <a href="index.php?page=CCplusplus" class="dropdown__sublink">
-                                        <i class='bx bxl-c-plus-plus'></i> C/C++
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=UnrealEngine5" class="dropdown__sublink">
-                                        <i class="ri-cash-line"></i> Unreal Engine 5
-                                    </a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="index.php?page=servicewebsite" class="dropdown__link">
+                                <i class="ri-lock-line"></i> Web Site
+                            </a>
                         </li>
 
-                        <!--=============== DROPDOWN SUBMENU ===============-->
-                        <li class="dropdown__subitem">
-                            <div class="dropdown__link">
-                                <i class='bx bx-globe'></i> Web Dev  <i class="ri-add-line dropdown__add"></i>
-                            </div>
-
-                            <ul class="dropdown__submenu">
-                                <li>
-                                    <a href="index.php?page=PHP" class="dropdown__sublink">
-                                        <i class='bx bxl-php'></i> PHP
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=Database" class="dropdown__sublink">
-                                        <i class="ri-database-2-fill"></i> Database
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=JavaScript" class="dropdown__sublink">
-                                        <i class='bx bxl-javascript' ></i> JavaScript
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=HTMLCSS" class="dropdown__sublink">
-                                        <i class='bx bxl-html5' ></i> HTML/CSS
-                                    </a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="index.php?page=servicemobilesite" class="dropdown__link">
+                                <i class="ri-lock-line"></i> Mobile App
+                            </a>
                         </li>
 
-                        <!--=============== DROPDOWN SUBMENU ===============-->
-                        <li class="dropdown__subitem">
-                            <div class="dropdown__link">
-                                <i class='bx bxl-netlify'></i> Dev .NET  <i class="ri-add-line dropdown__add"></i>
-                            </div>
-
-                            <ul class="dropdown__submenu">
-                                <li>
-                                    <a href="index.php?page=CSharp" class="dropdown__sublink">
-                                        <i class="ri-file-list-line"></i> C#
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=NetMAUI" class="dropdown__sublink">
-                                        <i class='bx bxl-audible'></i> .NET MAUI
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=ASPNET" class="dropdown__sublink">
-                                        <i class='bx bxs-bolt'></i>ASP .NET
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-
-                <!--=============== DROPDOWN 1 ===============-->
-                <li class="dropdown__item">
-                    <div class="nav__link">
-                        Services <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                    </div>
-
-                    <ul class="dropdown__menu">
-                        <!--=============== DROPDOWN SUBMENU ===============-->
-                        <li class="dropdown__subitem">
-                            <div class="dropdown__link">
-                                <i class="ri-global-line"></i> Web Site  <i class="ri-add-line dropdown__add"></i>
-                            </div>
-
-                            <ul class="dropdown__submenu">
-                                <li>
-                                    <a href="index.php?page=CreateAPI" class="dropdown__sublink">
-                                        <i class='bx bxs-leaf'></i> Create API
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=BackEnd" class="dropdown__sublink">
-                                        <i class='bx bxs-edit-alt'></i> Back End
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=FrontEnd" class="dropdown__sublink">
-                                        <i class='bx bxs-edit-alt'></i> Front End
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!--=============== DROPDOWN SUBMENU ===============-->
-                        <li class="dropdown__subitem">
-                            <div class="dropdown__link">
-                                <i class="ri-mac-fill"></i> Desktop App  <i class="ri-add-line dropdown__add"></i>
-                            </div>
-
-                            <ul class="dropdown__submenu">
-                                <li>
-                                    <a href="index.php?page=Windows" class="dropdown__sublink">
-                                        <i class="ri-computer-fill"></i> Windows
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=MacOS" class="dropdown__sublink">
-                                        <i class="ri-macbook-line"></i> MacOS
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=CrossPlateform" class="dropdown__sublink">
-                                        <i class="ri-refund-2-line"></i> Cross Plateform
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-
-                        <!--=============== DROPDOWN SUBMENU ===============-->
-                        <li class="dropdown__subitem">
-                            <div class="dropdown__link">
-                                <i class="ri-smartphone-line"></i> Mobile App  <i class="ri-add-line dropdown__add"></i>
-                            </div>
-
-                            <ul class="dropdown__submenu">
-                                <li>
-                                    <a href="index.php?page=OS" class="dropdown__sublink">
-                                        <i class="ri-smartphone-line"></i> OS
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=Android" class="dropdown__sublink">
-                                        <i class="ri-smartphone-line"></i> Android
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="index.php?page=MobileCrossPlateform" class="dropdown__sublink">
-                                        <i class="ri-refund-2-line"></i> Cross Plateform
-                                    </a>
-                                </li>
-                            </ul>
+                        <li>
+                            <a href="index.php?page=servicedesktopapp" class="dropdown__link">
+                                <i class="ri-lock-line"></i> Desktop App
+                            </a>
                         </li>
                     </ul>
                 </li>
@@ -202,7 +50,7 @@
                         Clients <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                     </div>
 
-                    <ul class="dropdown__menu">
+                    <ul class="dropdown__menu ">
                         <li>
                             <a href="index.php?page=Testimony" class="dropdown__link">
                                 <i class="ri-bard-line"></i> Testimony
@@ -252,13 +100,13 @@
 
                     <ul class="dropdown__menu">
                         <li id="signin">
-                            <a href="index.php?page=SignIn" class="dropdown__link">
+                            <a href="index.php?page=signin" class="dropdown__link">
                                 <i class="ri-lock-line"></i> Sign In
                             </a>
                         </li>
 
                         <li id="signup">
-                            <a href="index.php?page=SignUp" class="dropdown__link">
+                            <a href="index.php?page=signup" class="dropdown__link">
                                 <i class="ri-user-line"></i> Sign Up
                             </a>
                         </li>

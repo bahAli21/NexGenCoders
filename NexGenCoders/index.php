@@ -5,7 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NexGen Coders</title>
     <meta name="description" content="NexGen Coders by Sidy&&mamad">
+
+    <?php /** J'inclue mes style css en fonction de la page afficher */ ?>
+
     <link rel="stylesheet" href="assets/css/style.css">
+    <?php  if(($page = $_GET['page'] ?? 'home') == 'home') :?>
+    <link rel="stylesheet" href="assets/css/home.css">
+    <style>
+
+        main{
+            position: fixed;
+            top: 17%;
+            width: 100%;
+            height: 80%;
+            justify-content: center;
+            text-align: center;
+            display: flex;
+        }
+
+        @media screen and (max-width: 520px) {
+            main{
+                position: fixed;
+                top: 9%;
+            }
+        }
+
+    </style>
+    <?php endif; ?>
+    <?php  if(($page = $_GET['page'] ?? 'home') == 'signup' || ($page = $_GET['page'] ?? 'home') == 'signin' || ($page = $_GET['page'] ?? 'home') == 'resetpassword' ) :?>
+        <link rel="stylesheet" href="assets/css/login.css">
+    <?php endif; ?>
 
     <meta name="keywords" content="N-E-X-G-E-N-C-O-D-E-R-S, NeXgEnCoDers">
     <meta name="author" content="Votre Nom">
@@ -31,12 +60,13 @@
 <!-- le contenu principal de ma page -->
 <main>
     <?php
-    require_once "./template/home.php";
-    //J'inclue le header de la page
-    if($_GET['page'] == "Home"){
-        require_once "./template/home.php";
-    }elseif ($_GET['page'] == "SignIn" || $_GET['page'] == "SignUp")
-        require_once "./template/login.php";
+    //require_once "./template/home.php";
+
+    //Expresion simplifier du isset($_Get['page']) ? $_Get['page'] : 'home'
+    $page = $_GET['page'] ?? 'home';
+
+    require_once "./template/$page.php";
+
     ?>
 </main>
 
@@ -44,6 +74,5 @@
 <footer>
 
 </footer>
-hhhhhhhh
 </body>
 </html>
