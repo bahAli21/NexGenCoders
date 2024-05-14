@@ -32,9 +32,9 @@ class SignController {
      * @return bool Retourne true si l'utilisateur a été ajouté avec succès, sinon false.
      */
     public function Check(){
-        if(isset($this->method["fullname"]) && isset($this->method["email"]) && isset($this->method["password"])){
-            if(!$this->signUp->AlreadyExist($this->method["fullname"])){
-                return $this->signUp->AddUser($this->method["fullname"], $this->method["email"], $this->method["password"]);
+        if(isset($this->method["Username"]) && isset($this->method["Email"]) && isset($this->method["Password"])){
+            if(!$this->signUp->AlreadyExist($this->method["Username"])){
+                return $this->signUp->AddUser($this->method["Username"], $this->method["Email"], $this->method["Password"]);
             }
         }
     }
