@@ -1,12 +1,13 @@
 //Les fonctions ici
 
 // Import des variables depuis le fichier variables.js
-import {loginDiv, registerDiv, resetPassword} from './variables.js';
+import {loginDiv, registerDiv, resetPassword, HomePage} from './variables.js';
 
 function BackToSignInClick() {
     resetPassword.style.display = "none";
     loginDiv.style.display = "flex";
     registerDiv.style.display = "none";
+    HomePage.style.display = "none";
 }
 
 function SignInClick(){
@@ -14,8 +15,7 @@ function SignInClick(){
     if (loginDiv.style.display === "none") {
         loginDiv.style.display = "flex";
         registerDiv.style.display = "none";
-    } else {
-        loginDiv.style.display = "none";
+        HomePage.style.display = "none";
     }
 }
 
@@ -24,18 +24,19 @@ function SignUpClick(){
     if (registerDiv.style.display === "none") {
         loginDiv.style.display = "none";
         registerDiv.style.display = "flex";
-    } else {
-        registerDiv.style.display = "none";
+        HomePage.style.display = "none";
     }
 }
 
 
 function ResetPasswordClick(){
-    if(registerDiv.style.display === "flex")
+    if(registerDiv.style.display === "flex"){
+        HomePage.style.display = "none";
         registerDiv.style.display = "none";
-    else
+    }else{
+        HomePage.style.display = "none";
         loginDiv.style.display = "none";
-
+    }
     resetPassword.style.display = "flex";
 }
 

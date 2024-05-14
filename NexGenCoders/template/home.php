@@ -1,6 +1,6 @@
 <!--======================= HOME PAGE ======================-->
 
-<div class="home">
+<div class="home" id="Home">
     <div class="home-container">
         <div class="content">
             <h2 class="title">Qui sommes-nous ?</h2>
