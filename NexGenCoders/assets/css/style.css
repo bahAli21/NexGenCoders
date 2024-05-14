@@ -1,6 +1,8 @@
-@import "header.css"; /*Importe le style du Header*/
-@import "login.css"; /*Importe le style du Login*/
 
+
+@import "header.css"; /*Importe le style du header*/
+@import "login.css"; /*Importe le style du login*/
+@import "home.css"; /*Importe le style du home*/
 :root{
     --text-color: #fff;
     --bg-color: #fff;
@@ -20,6 +22,18 @@ body{
     box-sizing: border-box;
     font-family: sans-serif;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    position: fixed;
+    top: 17%;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
 }
 
 @media screen and (max-width: 750px) {

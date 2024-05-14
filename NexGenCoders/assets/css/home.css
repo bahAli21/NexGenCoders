@@ -1,0 +1,227 @@
+.home {
+    width:100%;
+    background-color: #dde1e7;
+}
+
+.home .home-container{
+    width:auto;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    float: left;
+}
+.home .home-container .content{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    background-color: #dde1e7;
+    border-radius: 15px;
+    box-shadow: -7px -7px 7px #ffffff73,
+    5px 5px 5px #5e687949;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home .home-container .image{
+    display: flex;
+    width: 50%;
+    height: 100%;
+    margin-left: 2%;
+    margin-right: 2%;
+    background-color: #dde1e7;
+    border-radius: 15px;
+    box-shadow: -7px -7px 7px #ffffff73,
+    5px 5px 5px #5e687949;
+}
+
+
+.home-container .image img{
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-size: contain;
+}
+
+.title{
+    margin: 5px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    float: right;
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #808080;
+}
+
+.content .description-txt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.content .description-txt p:first-child{
+    font-size: .98rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.content .description-txt p:nth-child(2){
+    font-size: .99rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.content .description-txt p{
+    margin-bottom: 20px;
+    margin-right: 5px;
+    margin-left: 5px;
+    text-align: left;
+}
+
+.description-txt span{
+    color: rgb(0,100,0);
+}
+
+
+
+
+/* =============================Card Animation ===========================*/
+
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .container {
+    height: 230px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    background-color: #dde1e7;
+    border-radius: 15px;
+    box-shadow: -7px -7px 7px #ffffff73,
+    5px 5px 5px #5e687949;
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > .icon {
+    background: #223;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: start;
+    overflow: hidden;
+    height: 80px;
+    width: 320px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+
+.description h4  {
+    text-align: start;
+    position: absolute;
+    left: 10px;
+    top: 41%;
+    animation-play-state: running;
+    color: #0ef;
+    &:hover{
+        animation: nameAnim .5s linear ;
+        animation-play-state: paused;
+    }
+}
+
+@keyframes nameAnim {
+    0%{
+        scale(1);
+    }
+
+    100%{
+    scale(1.5);
+    }
+
+    0%{
+    scale(1);
+    }
+}
+
+.description .media{
+    position: absolute;
+    top: 30%;
+    margin: 5px;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 300px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+.card[for="c1"] {
+    background-image: url('../img/home-desc1.jpg');
+}
+.card[for="c2"] {
+    background-image: url('../img/home-desc2.jpg');
+}
+
+.description h4{
+    font-weight: 600;
+}
+.description a i{
+    color: #222233;
+    font-size: 21px;
+    margin: 2px;
+}
+
+.description .media a i:hover{
+    color: #0ef;
+}
+
+
