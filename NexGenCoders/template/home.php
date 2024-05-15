@@ -4,10 +4,8 @@
         <div class="content">
             <h2 class="title">Qui sommes-nous ?</h2>
             <div class="description-txt">
-                <p>Nous sommes <span>Bah Mamadou</span> et <span>Diallo fSidy</span>, deux développeurs passionnés par le code.</p>
-                <p>À travers <span class="n-g-c">N-G-C (Next Generation Coders)</span>,
-                    nous proposons des formations en programmation et nous prenons en charge des contrats de développement web,
-                    logiciel et mobile.</p>
+                <p>🌟 Salut ! Nous, c'est <span>Bah Mamadou</span> et <span>Diallo Sidy</span>, l'équipe dynamique de <span class="n-g-c">N-G-C (Next Generation Coders)</span>. 💻✨</p>
+                <p>On forme et on développe pour le web, le logiciel, le mobile : votre avenir digital entre nos mains ! Rejoignez-nous pour coder ensemble. 🚀📱</p>
             </div>
             <div class="block-card">
                 <div class="wrapper">

@@ -36,6 +36,15 @@
         <link rel="stylesheet" href="assets/css/login.css">
     <?php endif; ?>
 
+    <?php  if(($page = $_GET['page'] ?? 'home') == 'webSite') :?>
+        <style>
+            main{
+                width: auto;
+            }
+        </style>
+        <link rel="stylesheet" href="assets/css/webSite.css">
+    <?php endif; ?>
+
     <meta name="keywords" content="N-E-X-G-E-N-C-O-D-E-R-S, NeXgEnCoDers">
     <meta name="author" content="Votre Nom">
 

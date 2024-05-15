@@ -20,25 +20,25 @@
                 <!--=============== DROPDOWN 2 ===============-->
                 <li class="dropdown__item">
                     <div class="nav__link">
-                        Service <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                        Portfolio <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                     </div>
 
                     <ul class="dropdown__menu">
                         <li>
-                            <a href="index.php?page=servicewebsite" class="dropdown__link">
-                                <i class="ri-lock-line"></i> Web Site
+                            <a href="index.php?page=webSite" class="dropdown__link">
+                                Web-Site
                             </a>
                         </li>
 
                         <li>
-                            <a href="index.php?page=servicemobilesite" class="dropdown__link">
-                                <i class="ri-lock-line"></i> Mobile App
+                            <a href="index.php?page=mobilesite" class="dropdown__link">
+                                MobileApp
                             </a>
                         </li>
 
                         <li>
-                            <a href="index.php?page=servicedesktopapp" class="dropdown__link">
-                                <i class="ri-lock-line"></i> Desktop App
+                            <a href="index.php?page=desktopapp" class="dropdown__link">
+                                DesktopApp
                             </a>
                         </li>
                     </ul>
