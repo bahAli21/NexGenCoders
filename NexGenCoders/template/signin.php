@@ -2,7 +2,7 @@
 
 <div class="login">
     <img src="assets/img/logoMax.png" alt="Logo Du Site">
-    <form action="" method="POST">
+    <form action="#" method="POST">
         <h2 class="title">🔑 Sign In 🔓</h2>
         <input type="email" placeholder="Email" name="Email" required>
         <input type="password" placeholder="Password" name="Password" required>

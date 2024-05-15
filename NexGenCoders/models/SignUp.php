@@ -46,11 +46,12 @@ class SignUp {
      */
     public function AddUser($fullname, $email, $password): bool {
         try {
-            $req = "INSERT INTO users (fullname, email, password) VALUES (?, ?, ?)";
+            $password=password_hash($password, PASSWORD_DEFAULT);
+            $req = "INSERT INTO users (fullname, email, passwor) VALUES (?, ?, ?)";
             $statement = $this->dba->prepare($req);
             $statement->bindParam(1, $fullname);
             $statement->bindParam(2, $email);
-            $statement->bindParam(3, $password);
+            $statement->bindParam(3,$password);
             $statement->execute();
             if ($statement) {
                 return true;

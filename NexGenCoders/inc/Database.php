@@ -15,10 +15,10 @@ class Database {
 
         try {
         
-            $connexion= new PDO("mysql:host={$this->config['host']};dbname={$this->config['dbname']}",
+            $this->connexion= new PDO("mysql:host={$this->config['host']};dbname={$this->config['dbname']}",
                 $this->config['uid'],
                 $this->config['password']);
-            if($connexion){
+            if($this->connexion){
                 echo ("connexion reussie");
 
             }

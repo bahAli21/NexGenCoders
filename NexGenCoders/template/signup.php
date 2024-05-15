@@ -2,9 +2,10 @@
 
 <div class="register">
     <img src="assets/img/logoMax.png" alt="Logo Du Site">
-    <form action="" method="POST">
+    <form action="#" method="POST">
         <h2 class="title">📝 Sign Up 📮</h2>
         <input type="text" placeholder="Username" name="Username" required>
+
         <input type="email" placeholder="Email" name="Email" required>
         <input type="password" placeholder="Password" name="Password" required>
         <div class="remember-forgot">
