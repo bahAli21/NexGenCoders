@@ -24,18 +24,24 @@ class SignIn {
      */
     public function VerifieConnect($email, $password) : int {
         try {
-            // Prépare la requête SQL pour récupérer l'ID de l'utilisateur.
-            $req = "SELECT id FROM users WHERE email = ? AND passwor = ?";
+            // Prépare la requête SQL pour récupérer l'ID de l'utilisateur en fonction de l'email.
+            $req = "SELECT id, passwor FROM users WHERE email = ?";
             $statement = $this->dba->prepare($req);
-            // Exécute la requête avec les valeurs des paramètres.
-            $statement->execute([$email, $password]);
+            // Exécute la requête avec la valeur de l'email.
+            $statement->execute([$email]);
             // Récupère la première ligne de résultat sous forme d'objet.
             $data = $statement->fetchObject();
-            // Si un résultat est trouvé, retourne l'ID de l'utilisateur.
-            if ($data) {
+            // Si aucun résultat n'est trouvé, retourne -1.
+            if (!$data) {
+                return -1;
+            }
+            // Vérifie si le mot de passe fourni correspond au mot de passe haché stocké dans la base de données.
+            if (password_verify($password, $data->passwor)) {
+                // Si les mots de passe correspondent, retourne l'ID de l'utilisateur.
                 return $data->id;
             } else {
-                return -1; // Aucun résultat trouvé
+                // Si les mots de passe ne correspondent pas, retourne -1.
+                return -1;
             }
         } catch (Exception $e) {
             // En cas d'erreur, enregistre l'erreur dans les logs et retourne -1.

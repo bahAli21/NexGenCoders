@@ -1,3 +1,23 @@
+<?php 
+
+/**
+ * Fichier d'entrée de l'application NexGenCoders.
+ * 
+ * Ce fichier gère le routage des différentes pages de l'application
+ * et inclut les contrôleurs et les modèles de template en fonction
+ * de la page demandée.
+ *
+ * @package NexGenCoders
+ */
+
+// Inclusion des dépendances nécessaires
+require_once 'inc/Database.php';
+require_once 'models/SignIn.php';
+require_once 'models/SignUp.php';
+require_once './inc/Routes.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -53,7 +73,7 @@
 <div class="header">
     <?php
     //J'inclue le header de la page
-    require_once "./static/header.php";
+   // require_once "./static/header.php";
     ?>
 </div>
 
@@ -65,7 +85,17 @@
     //Expresion simplifier du isset($_Get['page']) ? $_Get['page'] : 'home'
     $page = $_GET['page'] ?? 'home';
 
-    require_once "./template/$page.php";
+    //require_once "./template/$page.php";
+    if(isset($Routes[$page])){
+        
+        $controller = $Routes[$page]['controller'];
+        $template = $Routes[$page]['template'];
+    }
+    require_once './controllers/'.$controller.'.php' ;
+    require_once './template/'.$template.'.php' ;
+   
+    
+
 
     ?>
 </main>

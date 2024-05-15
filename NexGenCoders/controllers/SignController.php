@@ -44,10 +44,10 @@ class SignController {
 $signU = new SignUp();
 
 // Création d'une instance de la classe SignController avec les données POST et l'instance de SignUp
-$sigUpController = new SignController($_POST, $signU);
+$singUpController = new SignController($_POST, $signU);
 
 // Appel de la méthode Check() pour vérifier et ajouter l'utilisateur
-$isSuccess = $sigUpController->Check(); 
+$isSuccess = $singUpController->Check(); 
 var_dump($isSuccess);
 
 // Vérification du succès de l'opération
