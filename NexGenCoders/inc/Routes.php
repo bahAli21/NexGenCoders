@@ -13,5 +13,15 @@ $Routes = [
     'home' => [
         'controller' => "HomeController",
         'template' => "home"
+    ],
+    
+    'webSite' => [
+        'controller' => "WebSiteController",
+        'template' => "webSite"
+    ],
+
+    'resetpassword' => [
+        'controller' => "ResetPasswordController",
+        'template' => "resetpassword"
     ]
 ];

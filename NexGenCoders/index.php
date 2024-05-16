@@ -14,7 +14,15 @@
 require_once 'inc/Database.php';
 require_once 'models/SignIn.php';
 require_once 'models/SignUp.php';
+require_once 'models/ResetPassword.php';
 require_once './inc/Routes.php';
+
+//inclusion liee au PHPMailer
+
+
+require 'PHPMailer-master/src/Exception.php';
+require 'PHPMailer-master/src/PHPMailer.php';
+require 'PHPMailer-master/src/SMTP.php';
 
 ?>
 
@@ -82,7 +90,7 @@ require_once './inc/Routes.php';
 <div class="header">
     <?php
     //J'inclue le header de la page
-   // require_once "./static/header.php";
+   //require_once "./static/header.php";
     ?>
 </div>
 
